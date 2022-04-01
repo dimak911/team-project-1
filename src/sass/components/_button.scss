@@ -7,10 +7,51 @@
     justify-content: center;
     text-align: center;
 }
-// example
-.btn__heder {
-    @include btn-style(159px, 44px, 22px, #D41443, #FFFFFF, #ECEBEB);
+@mixin font($fw, $fs, $lh, $ls) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: ($lh / $fs);
+    letter-spacing: $ls;
+}
 
+@mixin indents($pv, $ph, $ml, $mr) {
+    padding: $pv $ph;
+    margin-left: $ml;
+    margin-right: $mr;
+}
+
+@mixin btn-form($wi, $hi, $br) {
+    width: $wi;
+    height: $hi;
+    border-radius: $br;
+}
+
+@mixin btn-color($col, $bgc, $bgc2) {
+    background-color: $bgc;
+    color: $col;
+
+    &:hover,
+    &:focus {
+        background-color: $bgc2;
+    }
+}
+
+.btn__modal {
+//  modal mobil
+    @include btn-form(209px, 44px, 22px);
+    @include btn-color(#D41443, #FFFFFF, #ECEBEB);
+   
     @include font(700, 16px, 21px, null);
-    @include indents(0, 0, auto, auto);
+
+// modal tablet
+    @include media ($tab) {
+        @include btn-form(186px, 44px, 22px);
+    }
+}
+
+.btn__heder {
+    @include indents(0, 0, auto, 0px);
+    @include btn-form(159px, 44px, 22px);
+    @include btn-color(#D41443, #FFFFFF, #ECEBEB);
+    @include font(700, 16px, 21px, null);
 }
