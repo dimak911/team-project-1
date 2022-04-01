@@ -1,0 +1,16 @@
+.btn {
+    font-family: inherit;
+    cursor: pointer;
+    border: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+// example
+.btn__heder {
+    @include btn-style(159px, 44px, 22px, #D41443, #FFFFFF, #ECEBEB);
+
+    @include font(700, 16px, 21px, null);
+    @include indents(0, 0, auto, auto);
+}
