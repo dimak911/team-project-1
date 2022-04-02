@@ -16,7 +16,6 @@
 </div>
 
 <script>
-  // refs.modal.classList.toggle('is-hidden');
   const testButton = document.querySelector('.test__button');
   const overlay = document.querySelector('.overlay');
   const modal = document.querySelector('.readmore__modal');
@@ -24,6 +23,11 @@
   testButton.addEventListener('click', () => overlay.classList.toggle('overlay--off'));
   overlay.addEventListener('click', () => overlay.classList.toggle('overlay--off'));
   // modal
+  // modal.addEventListener('mouseover', function (event) {
+  //   console.log('mouse over test!'), false;
+  //   overlay.style = 'pointer-events: none';
+  //   console.log(modal.matches(':hover'));
+  // });
 
   console.log(modal);
 </script>
