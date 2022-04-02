@@ -22,21 +22,4 @@
 
   testButton.addEventListener('click', () => overlay.classList.toggle('overlay--off'));
   overlay.addEventListener('click', () => overlay.classList.toggle('overlay--off'));
-  // modal
-  modal.addEventListener(
-    // 'mouseover',
-    // 'pointerleave',
-    'pointerover',
-    function (event) {
-      // console.log('mouse over test!'), false;
-      // overlay.style = 'pointer-events: none';
-      console.log(modal.matches(':hover'));
-      console.log(event.type + ' на ' + event.currentTarget);
-      console.log('Координаты: ' + event.clientX + ':' + event.clientY);
-      console.log('attr: ' + Object.keys(modal));
-    },
-    false,
-  );
-
-  console.log(modal);
 </script>
