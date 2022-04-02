@@ -15,6 +15,9 @@
   background-color: rgba(225, 121, 146, 0.5);
 }
 
+.overlay .readmore__modal:hover {
+}
+
 .overlay--off {
   // display: none;
   opacity: 0;
@@ -26,6 +29,18 @@
   top: 50%;
   left: 50%;
   z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Titan One';
+  font-size: 24px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 
   transform: translate(-50%, -50%) scale(0.5, 0.5);
   transition: transform 500ms ease-in, box-shadow 500ms ease-in;
@@ -41,7 +56,7 @@
 
   @media screen and (min-width: 1280px) {
     width: 550px;
-    height: 640;
+    height: 640px;
     padding: 32px;
   }
 
@@ -49,27 +64,27 @@
   border-radius: 24px;
   box-shadow: 9px 10px 16px 11px rgba(128, 0, 0, 0.6);
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   &:hover {
     transform: translate(-50%, -50%) scale(1, 1) perspective(400px) rotateY(180deg);
     box-shadow: -9px 10px 16px 11px rgba(128, 0, 0, 0.6);
   }
 
-  &:hover .readmore__text {
+  &:hover .readmore__text,
+  &:hover .readmore__title {
     transform: rotateY(180deg);
-  }
-
-  &:hover .overlay {
-    // pointer-events: none;
-    background-color: aqua;
   }
 }
 
+.readmore__title {
+  color: #d41443;
+
+  text-align: center;
+  transition: transform 400ms ease-in;
+}
+
 .readmore__text {
-  font-size: 5rem;
+  color: #ffffff;
+
   text-align: center;
   transition: transform 400ms ease-in;
 }
