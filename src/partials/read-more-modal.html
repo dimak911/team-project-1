@@ -1,0 +1,22 @@
+<div class="temporary__abouts">
+  <button type="button" class="test__button">press here</button>
+</div>
+
+<div class="overlay overlay--off">
+  <div class="readmore__modal">
+    <p class="readmore__text">read more here</p>
+  </div>
+</div>
+
+<script>
+  // refs.modal.classList.toggle('is-hidden');
+  const testButton = document.querySelector('.test__button');
+  const overlay = document.querySelector('.overlay');
+  const modal = document.querySelector('.readmore__modal');
+
+  testButton.addEventListener('click', () => overlay.classList.toggle('overlay--off'));
+  overlay.addEventListener('click', () => overlay.classList.toggle('overlay--off'));
+  // modal
+
+  console.log(modal);
+</script>
