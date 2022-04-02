@@ -1,0 +1,100 @@
+.container {
+  min-width: 480px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+
+
+.products__title-text{
+  margin-bottom: 15px;
+   font-size: 18px;
+   line-height: 1.17;
+   text-align: center;
+   text-transform: uppercase;
+   color: #FFA5BA;
+   text-align: center;
+ }
+ 
+ .products__title{
+   margin-bottom: 8px;
+   font-size: 34px;
+   line-height: 1.15;
+   text-align: center;
+   letter-spacing: 0.04em;
+   text-transform: uppercase;
+   color: #D41443
+ }
+ 
+ .products__item-title{
+   font-size: 20px;
+   line-height: 1.15;
+  
+   letter-spacing: 0.04em;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   margin-bottom: 32px;
+ }
+ 
+ .products__item-text{
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.52;
+   
+   letter-spacing: 0.04em;
+   color: #FFFFFF;
+   margin-bottom: 32px;
+ }
+ 
+ .products__list{
+   text-align: center;
+ }
+ .products__item{
+   position: relative;
+   border-radius: 24px;
+   margin: 0 auto;
+ }
+   .accent--pink{
+     background: #FFB8CA;
+   }
+ 
+   .accent--caramel{
+     background: #F0D1A5;
+   }
+ 
+   .accent--green{
+     background: #C2E297;
+   }
+ 
+ 
+ .products__btn{
+   width: 40px;
+   height: 40px;
+   border-radius:50%;
+   margin-bottom: 40px;
+ }
+.products-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ .products-icon_item{
+   width: 6px;
+   height: 6px;
+   border-radius: 50%;
+   background:#FFFFFF;
+   margin-bottom: 32px;
+
+   &:not(:last-child){
+     margin-right: 4px;
+   }
+ }
+
+ .img{
+   position: absolute;
+   top: 0;
+  left: 0;
+  background-image: url(../../images/img/p1-desk_1x.png)
+ }
+ 
