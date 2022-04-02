@@ -1,6 +1,12 @@
 .footer {
     background-color: #FFF5F6;
 
+    @media screen and (min-width: 768px) {
+        br {
+            display: none;
+        }
+    }
+
     &__parts {
         @media screen and (min-width: 768px) {
             display: flex;
@@ -12,6 +18,10 @@
 
     .part {
         margin-bottom: 40px;  
+
+        @media screen and (min-width: 1280px) {
+            margin-bottom: 60px
+        }
     }
 
     &__title--one {
@@ -60,7 +70,7 @@
             font-size: 58px;
             line-height: 1.13;
             text-transform: uppercase;
-            width: 474px;
+            width: 500px;
         
         }
     }
@@ -69,6 +79,7 @@
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+        margin-bottom: 40px;
     }
 
     &__site:not(:last-child) {
@@ -128,7 +139,7 @@
     }
     
     &__tel {
-        color: var(--red-text-color);
+        color: var(--accent-text-color);
 
     }
 
@@ -137,7 +148,7 @@
         font-size: 14px;
         line-height: 1.52;
         text-align: center;
-        color: var(--grey-text-color);
+        color: var(--secondary-text-color);
         border-top: 1px solid #E1E1E1;
         padding: 16px 20px 20px 20px;
 
@@ -145,7 +156,10 @@
             line-height: 1.86;
             letter-spacing: 0.02em;
             padding: 8px;
+
         }
+
+      
     }
 
 
