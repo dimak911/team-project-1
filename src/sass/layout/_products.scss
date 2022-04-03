@@ -219,10 +219,27 @@
      margin-right: 4px;
    }
  }
-.products-trumb{
+
+.products__trumb{
   position:relative
 }
- .img{
+
+// .products__trumb::before{
+ 
+//   display: block;
+//      content:'';
+//      background-image: url(../images/img/p1-mob_1x.png);
+//      background-repeat: no-repeat;
+//      background-size: contain;
+//      background-position: center;
+//      transform: translate(0%, -50%);
+   
+//      height: 280px;
+     
+
+// }
+
+ .products__img{
    position: absolute;
    top: 50%;
    left: 50%;
