@@ -1,6 +1,12 @@
 .products {
-  padding-bottom: 60px;
 
+  @media  screen and (max-width:1279px){
+  padding-bottom: 40px;
+  }
+
+  @media  screen and (min-width:1280px){
+    padding-bottom: 60px;
+    }
 }
 
 
@@ -57,6 +63,7 @@
  }
  
  .products__item-title{
+ 
     padding-top: 155px;
     margin-bottom: 32px;
     font-family: 'Titan One', sans-serif;
@@ -67,12 +74,35 @@
    color: var(--primary-text-color);
    margin-bottom: 32px;
 
+   
+  
+    &::after{
+     display: block;
+     content:'';
+     background-image: url(../images/img/p-ellipsis1x.png);
+     background-repeat: no-repeat;
+     background-size: contain;
+     width: 26px;
+     height: 6px;
+     text-align: center;
+     margin: 32px auto;
+
+     @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    
+      background-image: url(../images/img/p-ellipsis2x.png);
+  }
+   }
+
    @media  screen and (min-width:1280px) {
     padding-top: 165px;
     font-size: 30px;
     line-height: 1.13;
     
   }
+
+  
  }
  
  .products__item-text{
@@ -142,6 +172,9 @@
  }
    .accent--pink{
      background: var(--bg-cart-cream);
+
+     
+     
    }
  
    .accent--caramel{
@@ -166,11 +199,15 @@
   cursor: pointer;
  }
 
-.products-icon{
-  display: flex;
+ .products-icon{
+   
+ display: flex;
   justify-content: center;
-  align-items: center;
-}
+ align-items: center;
+
+
+ }
+
  .products-icon_item{
    width: 6px;
    height: 6px;
